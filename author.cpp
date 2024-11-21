@@ -24,4 +24,4 @@ class Author{
         std:: cout<<name<<" "<<surname<<std::endl;
       };
 };
-#endif;
+#endif

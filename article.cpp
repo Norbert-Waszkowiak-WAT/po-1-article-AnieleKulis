@@ -1,3 +1,5 @@
+#ifndef UNTITLED1_ARTICLE_H
+#define UNTITLED1_ARTICLE_H
 #include <iostream>
 #include <string>
 #include "author.cpp"
@@ -11,7 +13,7 @@ class Article{
       Article()
       : title(""),author(Author()),publicationYear(0),journal(""){};
       Article(std::string articleTitle, Author articleAuthor,int year,std::string journalName)
-      :title(articleTitle), author(articleAuthor), publicationYear(publicationYear),journal(journalName){};
+      :title(articleTitle), author(articleAuthor), publicationYear(year),journal(journalName){};
       Article(Article &other)
       :title(other.title),author(other.author),publicationYear(other.publicationYear),journal(other.journal){};
    std::string getJournal(){
@@ -30,3 +32,4 @@ void displayInfo(){
     std::cout<<"skibidi mostek";
 };
 };
+#endif
