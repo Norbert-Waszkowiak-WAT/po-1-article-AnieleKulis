@@ -11,13 +11,13 @@ class Chapter{
       int chapterNumber;
     public:
     Chapter()
-    :title(""),author(Author()),chapterNumber(1),{};
+    :title(""),author(Author()),chapterNumber(1){};
 
     Chapter(std::string chapterTitle, Author chapterAuthor,int number)
     :title(chapterTitle),author(chapterAuthor),chapterNumber(number){};
 
     Chapter(Chapter &other)
-    :title(other.title),author(other.author),(other.chapterNumber){};
+    :title(other.title),author(other.author),chapterNumber(other.chapterNumber){};
 
     Chapter(Article &article)
     :title(article.getTitle()),author(article.getAuthor()),chapterNumber(1){};
